@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="bootstrap-4.5.2-dist/css/bootstrap.min.css">
+  <!--CSS-->
+  <link rel="stylesheet" href="main.css">
+
+  <script type="text/javascript" src="tip.js"></script>
+</head>
+
+<body>
+    
+      <div class="container card-calc-box">
+          <div class="row">
+              <div class="col"></div>
+              <div class="col-sm-12 col-md-6">
+                <div class="card card-calc" style="width: 18rem;">
+                    <div class="card-body">
+                      <h3 class="card-title">Calculate the share</h3>
+                      <p class="card-text"></p>
+                      <form class="input-calc">
+                        <label for="amt">Enter the bill amount</label>
+                        <input type="number" id="amt" class="input calc">
+                        <label for="tip">How was your service?</label>
+                              <select id="serviceQual">
+                            <option disabled selected value="0">-- Choose an Option --</option>
+                            <option value="0.3">30&#37; &#45; Outstanding</option>
+                            <option value="0.2">20&#37; &#45; Good</option>
+                            <option value="0.15">15&#37; &#45; It was OK</option>
+                            <option value="0.1">10&#37; &#45; Bad</option>
+                            <option value="0.05">5&#37; &#45; Terrible</option>
+                        </select>
+                        <label for="people">How many people are sharing the bill?
+                        </label>
+                        <input type="number" id="peopleamt">
+                        <button class="btn-calc btn btn-primary" onclick="calc()">Calculate</button>
+                      </form>
+                      <p id="Answer" class="result"></p>
+                      <p id="Answer2" class="result"></p>
+                    </div>
+                  </div>
+              </div>
+              <div class="col"></div>
+          </div>
+      </div>
+
+
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="bootstrap-4.5.2-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

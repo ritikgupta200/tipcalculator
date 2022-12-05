@@ -1,0 +1,23 @@
+body{
+    background-color: darksalmon;
+}
+.container.card-calc-box{
+    margin-top: 10%;
+}
+.card-calc{
+    padding: 40px 0px 20px;
+    display: block;
+    margin: auto;
+    align-content: center;
+}
+.btn-calc{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+}
+.result{
+    margin-top: 10px;
+    background-color: coral;
+    display: block;
+    font-size: large;
+}
